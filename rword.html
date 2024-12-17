@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="rwd.js"></script>
+    <style type="text/css">
+        body{
+            background-color: black;
+            text-align: center;
+        }
+        select{
+            width:76px;
+        }
+        h3{
+            color: #948064;
+            line-height: 120%;
+        }
+        .ver{
+            color:green;
+            font-size: 0.8em;
+            margin-left: 4px;
+        }
+        #content{
+            display: flex;
+            justify-content: center;
+        }
+        #_runewords_{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: min-content;
+            
+        }
+        ._runeword_{
+            width: 360px;
+            color: #b2b2b2;
+            text-align: center;
+            margin: 0 5px 46px;
+        }
+        .equipment{
+            color: #D08420;
+            font-weight: bold;
+        }
+        .level{
+            font-size: 0.86em;
+        }
+        p{
+            color: #4850b8;
+        }
+        img{
+            width: 50px;
+        }
+        .runes{
+            margin: 16px 0;
+        }
+        .rune{
+            display: inline-block;
+            font-size: .86em;
+            margin: 0 3px;
+        }
+
+    </style>
+</head>
+<body>
+<select name="version" id="version" title="版本">
+    <option value="" selected>所有版本</option>
+    <option value="1.*">单机 1.*</option>
+    <option value="ladder">天梯 1.*</option>
+    <option value="2.+">重制版 2.+</option>
+</select>
+<select name="equipment" id="equipment" title="部位">
+    <option value="" selected>所有部位</option>
+    <option value="头盔">头盔</option>
+    <option value="盔甲">盔甲</option>
+    <option value="盾牌">盾牌</option>
+    <option value="武器">武器</option>
+    <option value="近战武器">近战武器</option>
+    <option value="棍棒">棍棒</option>
+    <option value="铁锤">铁锤</option>
+    <option value="钉头锤">钉头锤</option>
+    <option value="权杖">权杖</option>
+    <option value="刀剑">刀剑</option>
+    <option value="法杖">法杖</option>
+    <option value="弓">弓/十字弓</option>
+    <option value="斧头">斧头</option>
+    <option value="手杖">手杖</option>
+    <option value="锤类">锤类</option>
+    <option value="爪类">爪类</option>
+    <option value="匕首">匕首</option>
+    <option value="长柄武器">长柄武器</option>
+    <option value="长矛">长矛</option>
+    <option value="圣骑士盾牌">圣骑士盾牌</option>
+</select>
+<select name="slot" id="slot" title="孔数">
+    <option value="" selected>所有孔数</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+</select>
+<select name="rune" id="rune" title="符文">
+    <option value="" selected>所有符文</option>
+    <option value="01">01 艾尔</option>
+    <option value="02">02 艾德</option>
+    <option value="03">03 特尔</option>
+    <option value="04">04 那夫</option>
+    <option value="05">05 爱斯</option>
+    <option value="06">06 伊斯</option>
+    <option value="07">07 塔尔</option>
+    <option value="08">08 拉尔</option>
+    <option value="09">09 欧特</option>
+    <option value="10">10 书尔</option>
+    <option value="11">11 安姆</option>
+    <option value="12">12 索尔</option>
+    <option value="13">13 夏</option>
+    <option value="14">14 多尔</option>
+    <option value="15">15 海尔</option>
+    <option value="16">16 破</option>
+    <option value="17">17 鲁姆</option>
+    <option value="18">18 科</option>
+    <option value="19">19 法尔</option>
+    <option value="20">20 蓝姆</option>
+    <option value="21">21 普尔</option>
+    <option value="22">22 乌姆</option>
+    <option value="23">23 马尔</option>
+    <option value="24">24 伊斯特</option>
+    <option value="25">25 古尔</option>
+    <option value="26">26 维克斯</option>
+    <option value="27">27 欧姆</option>
+    <option value="28">28 罗</option>
+    <option value="29">29 瑟</option>
+    <option value="30">30 贝</option>
+    <option value="31">31 乔</option>
+    <option value="32">32 查姆</option>
+    <option value="33">33 萨德</option>
+</select>
+    <br>
+    <br>
+    <input type="text" name="effect" id="effect" title="效用">
+    <input type="button" value="OK" onclick="
+        generate(document.getElementById('version').value,
+        document.getElementById('equipment').value,
+        document.getElementById('slot').value,
+        document.getElementById('rune').value,
+        document.getElementById('effect').value,
+    )">
+    <div id="content">
+        <div id="_runewords_">
+    
+        </div>
+    </div>
+</body>
+</html>
