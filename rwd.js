@@ -1036,7 +1036,7 @@ let rladder110 =
                 28
             ],
             "ll": 59,
-            "desp": "<span class=\"tip\">武器</span>|20% 概率当被击中时施放出15级寒冰装甲|+25% 快速施法速度|+300% 增强伤害|+200% 增强防御|+1-1.5 (每角色等级) 生命|+50 攻击准确率|击中时 25%概率吓跑怪物|+20% 概率出现致命打击|+9 最小伤害|所有抗性 +25-30|12% 受损的生命转化成法力的提高|+1 照亮范围 ||<span class=\"tip\">盔甲</span>|20% 概率当被击中时施放出15级寒冰装甲|+25% 快速施法速度|+300% 增强伤害|+200% 增强防御|+1-1.5 (每角色等级) 生命|+15 防御|自动恢复生命速度 +7|+5% 抗闪电上限|物理伤害减少 7|所有抗性 +25-30|12% 受损的生命转化成法力的提高|+1 照亮范围"
+            "desp": "<武器>|20% 概率当被击中时施放出15级寒冰装甲|+25% 快速施法速度|+300% 增强伤害|+200% 增强防御|+1-1.5 (每角色等级) 生命|+50 攻击准确率|击中时 25%概率吓跑怪物|+20% 概率出现致命打击|+9 最小伤害|所有抗性 +25-30|12% 受损的生命转化成法力的提高|+1 照亮范围||<盔甲>|20% 概率当被击中时施放出15级寒冰装甲|+25% 快速施法速度|+300% 增强伤害|+200% 增强防御|+1-1.5 (每角色等级) 生命|+15 防御|自动恢复生命速度 +7|+5% 抗闪电上限|物理伤害减少 7|所有抗性 +25-30|12% 受损的生命转化成法力的提高|+1 照亮范围"
         },
         {
             "name": "悔恨",
@@ -1214,7 +1214,7 @@ let rladder110 =
                 31
             ],
             "ll": 65,
-            "desp": "<span class=\"tip\">武器</span>|100% 概率当你升级时施放出40级烈焰之径|40% 概率在击中目标时施放出22级火风暴|当装备后拥有10-15级救赎灵气|+350-400% 增强伤害|-28% 敌人的火焰系抗性|+350-400 对远程攻击的防御|忽略目标防御|20% 概率出现致命打击|每次击中偷取 14% 法力|+15-21 火吸收||<span class=\"tip\">盾牌</span>|100% 概率当你升级时施放出40级烈焰之径|40% 概率在击中目标时施放出22级火风暴|当装备后拥有10-15级救赎灵气|+350-400% 增强伤害|-28% 敌人的火焰系抗性|+350-400 对远程攻击的防御|+50 生命 |+5% 抗闪电上限|+10% 抗火上限|+15-21 火吸收"
+            "desp": "<武器>|100% 概率当你升级时施放出40级烈焰之径|40% 概率在击中目标时施放出22级火风暴|当装备后拥有10-15级救赎灵气|+350-400% 增强伤害|-28% 敌人的火焰系抗性|+350-400 对远程攻击的防御|忽略目标防御|20% 概率出现致命打击|每次击中偷取 14% 法力|+15-21 火吸收||<盾牌>|100% 概率当你升级时施放出40级烈焰之径|40% 概率在击中目标时施放出22级火风暴|当装备后拥有10-15级救赎灵气|+350-400% 增强伤害|-28% 敌人的火焰系抗性|+350-400 对远程攻击的防御|+50 生命 |+5% 抗闪电上限|+10% 抗火上限|+15-21 火吸收"
         },
         {
             "name": "骄傲",
@@ -1265,7 +1265,7 @@ let rladder110 =
                 11
             ],
             "ll": 25,
-            "desp": "<span class=\"tip\">Swords</span>|+2 所有技能|+25-35% 快速施法速度|+55% 快速打击恢复|+250 对远程攻击的防御|+22 体力|+89-112 法力|每次击中偷取 7% 生命|+3-14 冰伤害|+75 毒伤害，效果持续 5 秒|+1-50 电伤害|+3-8 魔法吸收||<span class=\"tip\">Shields</span>|+2 所有技能|+25-35% 快速施法速度|+55% 快速打击恢复|+250 对远程攻击的防御|+22 体力|+89-112 法力|攻击者受到伤害 14 |抗寒 +35%|抗毒 +35%|抗闪电 +35%|+3-8 魔法吸收"
+            "desp": "<刀剑>|+2 所有技能|+25-35% 快速施法速度|+55% 快速打击恢复|+250 对远程攻击的防御|+22 体力|+89-112 法力|每次击中偷取 7% 生命|+3-14 冰伤害|+75 毒伤害，效果持续 5 秒|+1-50 电伤害|+3-8 魔法吸收||<盾牌>|+2 所有技能|+25-35% 快速施法速度|+55% 快速打击恢复|+250 对远程攻击的防御|+22 体力|+89-112 法力|攻击者受到伤害 14 |抗寒 +35%|抗毒 +35%|抗闪电 +35%|+3-8 魔法吸收"
         },
         {
             "name": "思考之声",
@@ -1514,7 +1514,7 @@ let r26 =
                 2
             ],
             "ll": 39,
-            "desp": "<span class=\"tip\">武器</span>|5% 概率在击中目标时施放出 1级速度爆发|在装备后拥有1级狂热灵气|30% 提升攻击速度|+180-200% 增强伤害|+75% 对不死生物的伤害|+50 对抗不死生物的攻击准确率|+10 敏捷||<span class=\"tip\">盔甲</span>|65% 快速移动/奔跑|+40% 提升攻击速度|20% 快速打击恢复|+6 回避|+10 敏捷|耐力消耗减慢 50%|所有抗性 +10"
+            "desp": "<武器>|5% 概率在击中目标时施放出 1级速度爆发|在装备后拥有1级狂热灵气|30% 提升攻击速度|+180-200% 增强伤害|+75% 对不死生物的伤害|+50 对抗不死生物的攻击准确率|+10 敏捷||<盔甲>|65% 快速移动/奔跑|+40% 提升攻击速度|20% 快速打击恢复|+6 回避|+10 敏捷|耐力消耗减慢 50%|所有抗性 +10"
         },
         {
             "name": "模糊",
@@ -1583,7 +1583,7 @@ function generate(version, equipment, slotcount, rune, search) {
         else //"弓","十字弓"
             return ["弓","十字弓","武器"].includes(eqip);
     }
-        
+
     data = data.filter((en) =>
         (equipment ? en.eqip.find(matchEquipment) : true) &&
         (slotcount ? en.slotnum == slotcount : true) &&
@@ -1591,12 +1591,35 @@ function generate(version, equipment, slotcount, rune, search) {
         (search ? en.name.match(search) || en.desp.match(search) : true)
     );
 
+    var ul = document.getElementById("_index_");
+    ul.innerHTML = null;
+
     var div = document.getElementById("_runewords_");
     div.innerHTML = null;
 
+    function makeTag(e){
+        return e.name2.replaceAll(" ","");
+    }
+
     data.forEach(e => {
+        var li = document.createElement("li");
+        var a = document.createElement("a");
+        a.href = "#" + makeTag(e);
+        var span = document.createElement("span");
+        span.className = "name"
+        span.append(e.name);
+        a.appendChild(span);
+        a.appendChild(document.createElement("br"));
+        span = document.createElement("span");
+        span.className = "co";
+        span.append(e.rns.join("+"));
+        a.appendChild(span);
+        li.appendChild(a);
+        ul.appendChild(li);
+
         var container = document.createElement("div");
         container.className = "_runeword_";
+        container.id = makeTag(e);
         div.appendChild(container);
         var inner = document.createElement("h3");
         inner.textContent = e.name;
@@ -1638,7 +1661,7 @@ function generate(version, equipment, slotcount, rune, search) {
         inner.append("角色等级需求:" + e.ll);
         container.appendChild(inner);
         inner = document.createElement("p");
-        inner.innerHTML = e.desp.replaceAll("|", "<br>");
+        inner.innerHTML = e.desp.replaceAll(/<(.*?)>/g,"<span>$1</span>").replaceAll("|", "<br>");
         container.appendChild(inner);
     });
 }
