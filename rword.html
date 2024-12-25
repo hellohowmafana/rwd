@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>符文之语</title>
     <script src="rwd.js"></script>
     <style type="text/css">
         body{
             background-color: black;
+            display: grid;
+            grid-template: auto auto / min-content auto;
         }
         select{
             width:76px;
@@ -65,10 +67,12 @@
 
         #navigator{            
             position: sticky;
-            top:10px;
+            top:0;
+            width: 200px;
+            max-height: 100vh;
             overflow: auto;
-            max-height:100vh;
             background-color: black;
+            grid-area: 1 / 1 / span 2 / 1;
         }
         ul {
             list-style-type: none;
@@ -112,6 +116,11 @@
     </style>
 </head>
 <body>
+    <div id="navigator">
+        <ul id="_index_">
+            
+        </ul>
+    </div>
     <div id="filter">
         <div id="_filter_">    
             <select name="version" id="version" title="版本">
@@ -199,11 +208,6 @@
         </div>
     </div>
     <div id="container">
-        <div id="navigator">
-            <ul id="_index_">
-                
-            </ul>
-        </div>
         <div id="content">
             <div id="_runewords_">
                 

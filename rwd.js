@@ -1587,7 +1587,7 @@ function generate(version, equipment, slotcount, rune, search) {
     data = data.filter((en) =>
         (equipment ? en.eqip.find(matchEquipment) : true) &&
         (slotcount ? en.slotnum == slotcount : true) &&
-        (rune ? en.rns.includes(rune) : true) &&
+        (rune ? en.rns.includes(parseInt(rune)) : true) &&
         (search ? en.name.match(search) || en.desp.match(search) : true)
     );
 
