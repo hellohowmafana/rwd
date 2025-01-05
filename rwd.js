@@ -1438,7 +1438,7 @@ let r26 =
                 12
             ],
             "ll": 35,
-            "desp": "20% 快速打击恢复|每次击中偷取 4-6% 生命|+75-100% 增强防御|+10 体力|提升生命上限 5%|自动恢复生命 +30|物理伤害减少 7|物理伤害减少 10-15%<br>"
+            "desp": "20% 快速打击恢复|每次击中偷取 4-6% 生命|+75-100% 增强防御|+10 体力|提升生命上限 5%|自动恢复生命 +30|物理伤害减少 7|物理伤害减少 10-15%"
         },
         {
             "name": "解药",
@@ -1544,7 +1544,7 @@ let r26 =
                 19
             ],
             "ll": 67,
-            "desp": "狼人变化攻击会赋予印记，持续 180 秒狼之印记：|30% 提升攻击准确率|提升生命上限 40%|熊人变化攻击会赋予印记，持续 180 秒熊之印记：|25% 提升攻击速度|物理伤害减少 20%||+5变形技能等级（限德鲁伊使用）|25% 概率出现压碎性打击|+50-80% 增强防御|+10 力量|+10 体力|所有抗性 +10|无法冻结<br>"
+            "desp": "狼人变化攻击会赋予印记，持续 180 秒狼之印记|30% 提升攻击准确率|提升生命上限 40%|熊人变化攻击会赋予印记，持续 180 秒熊之印记|25% 提升攻击速度|物理伤害减少 20%|+5变形技能等级（限德鲁伊使用）|25% 概率出现压碎性打击|+50-80% 增强防御|+10 力量|+10 体力|所有抗性 +10|无法冻结"
         }
     ]
 
@@ -1566,7 +1566,8 @@ function generate(version, equipment, slotcount, rune, search) {
 
     function matchEquipment(eqip)
     {
-        var bodyArmor = ["近战武器","棍棒","铁锤","钉头锤","权杖","刀剑","法杖","斧头","手杖","锤类","爪类","匕首","长柄武器","长矛",];
+        var mace = ["锤类","钉头锤","铁锤"];
+        var bodyArmor = ["近战武器"].concat(mace).concat(["棍棒","权杖","刀剑","法杖","斧头","手杖","爪类","匕首","长柄武器","长矛",]);
         var armor = bodyArmor.concat("武器","弓","十字弓");
         var shield = ["盾牌","圣骑士盾牌"];
     
@@ -1576,8 +1577,12 @@ function generate(version, equipment, slotcount, rune, search) {
             return bodyArmor.includes(eqip);
         else if(equipment == "盾牌")
             return shield.includes(eqip);
-        else if(["头盔","盔甲"].includes(equipment))
+        else if(["头盔","盔甲","圣骑士盾牌"].includes(equipment))
             return equipment == eqip;
+        else if(equipment == "锤类")
+            return ["武器","近战武器"].concat(mace).includes(eqip);
+        else if(mace.slice(1).includes(equipment))
+            return ["武器","近战武器","锤类"].concat(equipment).includes(eqip);
         else if(bodyArmor.slice(1).includes(equipment))
             return ["武器","近战武器"].concat(equipment).includes(eqip);
         else //"弓","十字弓"
